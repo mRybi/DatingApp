@@ -73,7 +73,7 @@ namespace DatingApp.Controllers
                     var uploadParams = new ImageUploadParams()
                     {
                         File = new FileDescription(file.Name, stream),
-                        Transformation = new Transformation().Width(500).Height(1000).Crop("fill").Gravity("face")
+                        Transformation = new Transformation().Width(100).Height(100).Crop("fill").Gravity("face")
                     };
 
                     uploadResult = _cloudinary.Upload(uploadParams);
