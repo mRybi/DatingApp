@@ -38,7 +38,6 @@ login(model: any) {
         } else {
             this.changeMemberPhoto('../../assets/user.png');
         }
-       
         }
     }).catch(this.handleError);
 }
