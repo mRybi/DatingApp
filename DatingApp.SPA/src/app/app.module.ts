@@ -33,6 +33,8 @@ import { TimeAgoPipe } from 'time-ago-pipe';
 import { PaginationModule } from 'ngx-bootstrap/pagination/pagination.module';
 import { ButtonsModule } from 'ngx-bootstrap/buttons/buttons.module';
 import { ListsResolver } from './_resolvers/lists.resolver';
+import { MessageResolver } from './_resolvers/message.resolver';
+import { MemberMessagesComponent } from './members/member-messages/member-messages.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,8 @@ import { ListsResolver } from './_resolvers/lists.resolver';
     MemberDetailComponent,
     MemberEditComponent,
     PhotoEditorComponent,
-    TimeAgoPipe
+    TimeAgoPipe,
+    MemberMessagesComponent
 ],
   imports: [
     BrowserModule,
@@ -73,7 +76,8 @@ import { ListsResolver } from './_resolvers/lists.resolver';
     MemberListResolver,
     MemberEditResolver,
     PreventUnsavedChanges,
-    ListsResolver
+    ListsResolver,
+    MessageResolver
   ],
   bootstrap: [AppComponent]
 })
