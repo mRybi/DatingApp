@@ -1,6 +1,6 @@
 # DatingApp
 Dating application with:
 - login/register user service,
-- likeing other users,
+- liking other users,
 - adding photos,
 - messaging
