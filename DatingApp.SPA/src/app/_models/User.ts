@@ -8,11 +8,12 @@ export interface User {
     age: number;
     gender: string;
     created: Date;
+    lastActive: Date;
     photoUrl: string;
     city: string;
-    country: string;
+    coutry: string;
     intrests?: string;
-    introduction?: string;
+    inroduction?: string;
     lookingFor?: string;
     photos?: Photo[];
 }
